@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name= "description" content= "Get breaking headlines in the United States or search for related news anywhere in the world!">
+    <title>TOP HEADLINES</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body> 
+    <div class="titlePage">
+      <header role="banner"> top headlines </header>
+      <p>Get breaking headlines in the United States or search for related news anywhere in the world</p>
+    </div>
+    <div class="sidebar"> 
+      <form role="search">
+        <input type="text" required class="searchBar" placeholder="search news">
+        <button type="submit" class="searchButton"> <span class="magnifyingGlass"></span></button>
+      </form>
+      <nav role="navigation">
+        <div class="categories"> <h2> categories </h2>
+          <button type="button" class="business">business</button>
+          <button type="button" class="entertainment"> entertainment </button>
+          <button type="button" class="health">health</button>
+          <button type="button" class="science">science</button>
+          <button type="button" class="sports">sports</button>
+          <button type="button" class="technology">technology</button>
+          <button type="button" class="topHeadlinesButton">top headlines </button>
+        </div>
+      </nav>
+    </div> 
+    <div class="topHeadlines"></div>
+    <div class="page"></div>
+    <footer role="contentinfo"> Content is available thanks to News API &copy rochelle gorbea 2018</footer>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
