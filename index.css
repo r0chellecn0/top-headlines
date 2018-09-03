@@ -1,0 +1,272 @@
+
+.topHeadlines {
+ width: 68%;
+ font-size: 2vw;
+ padding-left: 30%;
+ color: rgb(65, 21, 21);
+ margin-top: 3%;
+}
+.topHeadlines img {
+  width: 15%;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.topHeadlines p {
+  width: 50%;
+  font-size: 17px;
+  vertical-align: center;
+  display: inline-block ;
+  font-family: 'IBM Plex sans', sans-serif;
+}
+
+header {
+  font-family: 'Shrikhand', cursive;
+  text-transform: uppercase;
+ font-size: 2.5em;
+  line-height: 1.5em;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 18px;
+  font-family: 'IBM Plex sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+h2 {
+  font-family: 'Shrikhand', cursive;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: regular;
+}
+
+.titlePage {
+  padding-left: 30%;
+  color: rgb(65, 21, 21);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titlePage p {
+  font-size: 1.3em;
+  line-height: 1.358333em;
+  font-family: 'IBM Plex sans', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color: rgb(65, 21, 21)
+}
+a:hover {
+  cursor: pointer;
+  color: black;
+}
+.sidebar{
+ height: 100%;
+  width: 20%;
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  left: 0;
+ background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: rgb(65, 21, 21);
+  text-align: center;
+  font-weight: strong;
+  text-transform: uppercase;
+}
+
+.categories {
+  padding-top: 10%;
+}
+
+.page {
+ font-size: 1.2em;
+ color: rgb(65, 21, 21);
+ margin-top: 2%;
+ text-align: center;
+}
+
+button.pageButton {
+ width: 20%;
+ position: relative;
+ text-align: center;
+ display: inline-block;
+ font-size: 1em;
+}
+
+button {
+  padding:1.5%;
+  border:1% solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  font-size: 1em;
+  color: white;
+  text-align:center;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  width: 80%;
+  background-color: rgb(65, 21, 21);
+  font-family: 'Shrikhand', cursive;
+}
+.searchButton:hover{
+  cursor:pointer;
+  box-shadow: inset 0 0 0 5px white;
+  transition: all 0.2s;
+}
+button:not(.searchButton):hover {
+color:rgb(65, 21, 21);
+background-color:white;
+cursor: pointer;
+} 
+.magnifyingGlass {
+  position:relative;
+  display:inline-block;
+  background: rgb (65,21,21);
+  border-radius: 30px;
+  height: 6px;
+  width: 6px;
+  border: 2px solid white;
+}
+  
+.magnifyingGlass:after {
+  content: "";
+  height: 2px;
+  width: 6px;
+  background:white;
+  position:absolute;
+  top:7px;
+  left:5px;
+  -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+
+.searchButton {
+  width: 20%;
+  display: inline-block;
+}
+
+.searchBar {
+  height: 1.8em;
+  width: 60%;
+  font-family: 'IBM Plex sans', sans-serif;
+  text-transform: uppercase;
+}
+
+footer {
+  font-size: .9em;
+  line-height: 1em;
+  font-weight: bolder;
+  color: rgb(65, 21, 21);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 1.1%;
+  font-family: 'IBM Plex sans', sans-serif;
+}
+
+@media only screen and (max-width: 614px) {
+  body {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+  header {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 10%;
+    display: inline-table;
+    float: left;
+    position: relative;
+  }
+  .page {
+    width: 100%;
+    position: relative;
+    display: inline-table;
+    height: 20%;
+  }
+  .pageButton {
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  }
+  .topHeadlines, .titlePage {
+    display: inline-table;
+    float: left;
+    width: 100%;
+    padding: 1.5%;
+    font-weight: bolder;
+  }
+  .topHeadlines img{
+    width: 80%;
+    text-align: center;
+  }
+  .topHeadlines p{
+    width: 100%;
+    padding: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 614px) and (max-width: 875px) {
+  body {
+    font-size: 1em;
+    line-height: 1.35em;
+    }
+  .page {
+    width: 100%;
+    position: relative;
+  }
+  .pageButton {
+    width: 100%;
+    position: relative;
+  }
+
+  header {
+    width: 100%;
+    padding: 1.1%;
+  }
+  .titlePage {
+    width: 67.8%;
+    padding-left: 31.1%;
+    padding-right: 1.1%
+  }
+  .sidebar {
+    width:30%;
+    margin-top: 10%;
+    display: inline-table;
+    float: left;
+    position: relative static;
+  }
+  .topHeadlines {
+    display: inline-table;
+    float: left;
+    width: 67.8%;
+    padding-right: 1.1%;
+    padding-left: 31.1%;
+    font-weight: bolder;
+  }
+  .topHeadlines img{
+    width: 80%;
+  }
+  .topHeadlines p{
+    width: 100%;
+    padding: 1.5%;
+  }
+  button {
+    font-size: .9em;
+  }
+  footer {
+    position: relative;
+    display: inline-table;
+    text-align: center;
+  }
+}
+
