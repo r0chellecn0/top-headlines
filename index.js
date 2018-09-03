@@ -29,7 +29,7 @@ function returnTopHeadlines(data) {
         $('.topHeadlines').append(`<h1> <a href='${headlineUrl}' target="_blank"> ${headline} </a> </h1> <img src='https://chezsoi.org/lucas/wwcb/photos/404-Dead_Link.jpg' alt="Picture unavailable" target="_blank"> <p> I'm sorry, there is no description for this news article.</p>`);
     }
     else {
-    $('.topHeadlines').append(`<h1> <a href='${headlineUrl}' target="_blank"> ${headline} </a> </h1> <a href='${headlineUrl}'> <img src='${headlineImage}' alt="Image related to ${headline}" target="_blank"></a> <p>${headlineDescription}</p>`);
+    $('.topHeadlines').append(`<h1> <a href='${headlineUrl}' target="_blank"> ${headline} </a> </h1> <a href='${headlineUrl}' target="_blank"> <img src='${headlineImage}' alt="Image related to ${headline}"></a> <p>${headlineDescription}</p>`);
     }
   }
 }
