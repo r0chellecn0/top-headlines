@@ -1,4 +1,4 @@
-# top-headlines
+<h1> Top Headlines </h1>
 Get breaking headlines in the United States or search world news.
 
 Have the ability to filter the top ten stories in the United States by category.
